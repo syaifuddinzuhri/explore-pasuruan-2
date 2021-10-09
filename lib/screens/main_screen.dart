@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject/constants/color_constant.dart';
 import 'package:miniproject/screens/tour_screen.dart';
 import 'package:miniproject/screens/home_screen.dart';
 import 'package:miniproject/screens/profile_screen.dart';
@@ -30,24 +29,18 @@ class _MainScreenState extends State<MainScreen> {
         items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined),
-              activeIcon: Icon(
-                Icons.home,
-                color: mBlueColor,
-              ),
+              activeIcon: Icon(Icons.home),
               label: ''),
           BottomNavigationBarItem(
               icon: Icon(Icons.attractions_outlined),
-              activeIcon: Icon(
-                Icons.attractions,
-                color: mBlueColor,
-              ),
+              activeIcon: Icon(Icons.attractions),
               label: ''),
           BottomNavigationBarItem(
-              icon: Icon(Icons.info_outline),
-              activeIcon: Icon(
-                Icons.info,
-                color: mBlueColor,
+              icon: CircleAvatar(
+                radius: 11.0,
+                backgroundImage: AssetImage("assets/images/avatar.jpg"),
               ),
+              // icon: Icon(Icons.person_add_alt_1_outlined),
               label: '')
         ],
         onTap: (index) {

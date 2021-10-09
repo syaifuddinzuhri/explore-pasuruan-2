@@ -18,25 +18,32 @@ class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: mBackgroundColor,
-      title: Container(
-          width: 110,
-          child: Image.asset("assets/images/logo.png", fit: BoxFit.fill)),
-      elevation: 0,
-      actions: <Widget>[
-        IconButton(
-          color: mBlueColor,
-          icon: CircleAvatar(
-            radius: 12.0,
-            backgroundImage: AssetImage("assets/images/avatar.jpg"),
-          ),
-          tooltip: 'Show Snackbar',
-          onPressed: () {
-            ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('This is a snackbar')));
-          },
-        ),
-      ],
-    );
+        backgroundColor: mBackgroundColor,
+        title: Container(
+            width: 110,
+            child: Image.asset("assets/images/logo.png", fit: BoxFit.fill)),
+        elevation: 0,
+        actions: [
+          PopupMenuButton<String>(
+              icon: Icon(Icons.more_vert, color: mSubtitleColor),
+              onSelected: handleClick,
+              itemBuilder: (BuildContext context) {
+                return {'Profile'}.map((String choice) {
+                  return PopupMenuItem<String>(
+                    value: choice,
+                    child: Text(choice),
+                  );
+                }).toList();
+              })
+        ]);
+  }
+
+  void handleClick(String value) {
+    switch (value) {
+      case 'Logout':
+        break;
+      case 'Profile':
+        break;
+    }
   }
 }
