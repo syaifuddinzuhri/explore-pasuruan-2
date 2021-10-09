@@ -32,7 +32,7 @@ var tourData = [
         "Jl. Raya Barsari, Prigen, Gambiran, Grogol, Gambiran, Prigen, Pasuruan, Jawa Timur 67157",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 15.000/orang",
-    "image": "assets/images/tours/golf.jpg",
+    "image": "assets/images/golf.jpg",
   },
   {
     "name": "Saygon Waterpark",
@@ -43,7 +43,7 @@ var tourData = [
         "Sengon, Desa, Karanggondang, Pucangsari, Purwosari, Pasuruan, Jawa Timur 67162",
     "open": "Setiap hari ( Jam 09.00 - 18.00 )",
     "ticket": "Hari biasa Rp. 20.000/orang dan Weekend Rp. 30.000/orang",
-    "image": "assets/images/tours/saygon.jpg",
+    "image": "assets/images/saygon.jpg",
   },
   {
     "name": "Bhakti Alam",
@@ -54,7 +54,7 @@ var tourData = [
         "Bhakti Alam, Kemang, Ngembal, Tutur, Pasuruan, Jawa Timur 67165",
     "open": "Setiap hari ( Jam 07.00 - 18.00 )",
     "ticket": "Rp. 5.000/orang",
-    "image": "assets/images/tours/bhaktialam.jpg",
+    "image": "assets/images/bhaktialam.jpg",
   },
   {
     "name": "Condido Agro Herbal",
@@ -65,7 +65,7 @@ var tourData = [
         "Jl. Nongkojajar Km No.3, Teratai, Karang Sentul, Gondang Wetan, Pasuruan, Jawa Timur 67174",
     "open": "Setiap hari ( Jam 08.00 - 17.00 )",
     "ticket": "Rp. 2.000/orang",
-    "image": "assets/images/tours/condido.jpg",
+    "image": "assets/images/condido.jpg",
   },
   {
     "name": "Perkebunan Apel Khrisna",
@@ -75,7 +75,7 @@ var tourData = [
     "address": "Desa Andonosari, Kecamatan Tutur, Kabupaten Pasuruan",
     "open": "Setiap hari ( Jam 09.00 - 18.00 )",
     "ticket": "Rp. 5.000/orang",
-    "image": "assets/images/tours/kebun_apel.jpg",
+    "image": "assets/images/kebun_apel.jpg",
   },
   {
     "name": "Kebun Raya Purwodadi",
@@ -86,7 +86,7 @@ var tourData = [
         "Jalan Raya Surabaya Malang KM.65, Capang, Purwodadi, Sembung Lor, Parerejo, Pasuruan, Jawa Timur 67163",
     "open": "Setiap hari ( Jam 07.00 - 20.00 )",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/kebunraya.jpg",
+    "image": "assets/images/kebunraya.jpg",
   },
   {
     "name": "Candi Gunung Gangsir",
@@ -97,7 +97,7 @@ var tourData = [
         "Dusun Keboncandi, Gunung Gangsir, Beji, Gununggangsir,Pasuruan, Jawa Timur 67154",
     "open": "Setiap hari (24 jam)",
     "ticket": "-",
-    "image": "assets/images/tours/gangsir.jpg",
+    "image": "assets/images/gangsir.jpg",
   },
   {
     "name": "Candi Jawi",
@@ -108,7 +108,7 @@ var tourData = [
         "Jl. Raya Prigen, Jawi, Candi Wates, Prigen, Pasuruan, Jawa Timur 67157",
     "open": "Setiap hari ( Jam 08.00 - 17.00 )",
     "ticket": "Rp. 2.000/orang",
-    "image": "assets/images/tours/jawi.jpg",
+    "image": "assets/images/jawi.jpg",
   },
   {
     "name": "Air Terjun Tundo Pitu",
@@ -118,7 +118,7 @@ var tourData = [
     "address": "Desa Baledono , Kecamatan Losari, Kabupaten Pasuruan",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/airterjunpitu.jpg",
+    "image": "assets/images/airterjunpitu.jpg",
   },
   {
     "name": "Air Terjun Putuk Truno",
@@ -128,7 +128,7 @@ var tourData = [
     "address": "Prigen, Pasuruan, Jawa Timur 67157",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 5.000/orang",
-    "image": "assets/images/tours/putuk_truno.jpg",
+    "image": "assets/images/putuk_truno.jpg",
   },
   {
     "name": "Air Terjun Rambut Moyo",
@@ -138,7 +138,7 @@ var tourData = [
     "address": "Palangsari, Puspo, Pasuruan, Jawa Timur 67176",
     "open": "Setiap hari ( Jam 08.00 - 19.00 )",
     "ticket": "Rp. 5.000/orang",
-    "image": "assets/images/tours/rambut_guyo.jpg",
+    "image": "assets/images/rambut_guyo.jpg",
   },
   {
     "name": "Air Terjun Coban Baung",
@@ -148,7 +148,7 @@ var tourData = [
     "address": "Area Sawah/Kebun, Purwodadi, Pasuruan, Jawa Timur 67163",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/coban_baung.jpg",
+    "image": "assets/images/coban_baung.jpg",
   },
   {
     "name": "Air Terjun Gumandar",
@@ -158,7 +158,7 @@ var tourData = [
     "address": "Jalan Raya Ledug, Prigen, Pasuruan, Jawa Timur 67157",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/gumandar.jpg",
+    "image": "assets/images/gumandar.jpg",
   },
   {
     "name": "Air Terjun Kakek Bodo",
@@ -168,7 +168,7 @@ var tourData = [
     "address": "Jalan Taman Wisata No.541, Semeru, Pasuruan",
     "open": "Setiap hari ( Jam 07.00 - 18.00 )",
     "ticket": "Rp. 5.000/orang",
-    "image": "assets/images/tours/kekekbodo.jpg",
+    "image": "assets/images/kekekbodo.jpg",
   },
   {
     "name": "Air Terjun Sumber Nyonya",
@@ -178,7 +178,7 @@ var tourData = [
     "address": "Gn. Sari, Tutur, Pasuruan, Jawa Timur 67165",
     "open": "Setiap hari ( Jam 07.30 - 18.00 )",
     "ticket": "Rp. 3.000/orang",
-    "image": "assets/images/tours/sumber_nyonya.jpg",
+    "image": "assets/images/sumber_nyonya.jpg",
   },
   {
     "name": "Air Terjun Coban Cemoro Gading",
@@ -188,7 +188,7 @@ var tourData = [
     "address": "Cemorogading, Ngadirejo, Tutur, Pasuruan, Jawa Timur 67165",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/cemorogading.jpg",
+    "image": "assets/images/cemorogading.jpg",
   },
   {
     "name": "Danau Ranu Grati",
@@ -199,7 +199,7 @@ var tourData = [
     "address": "Kalipang, Pasuruan",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 5.000/orang",
-    "image": "assets/images/tours/grati.jpg",
+    "image": "assets/images/grati.jpg",
   },
   {
     "name": "Pemandian Alam Banyu Biru",
@@ -210,7 +210,7 @@ var tourData = [
         "Jalan Raya Banyubiru Rt/Rw 02/02 Sumber Rejo, Winongan, Pasuruan, Jawa Timur 67182",
     "open": "Setiap hari ( Jam 08.00 - 18.00 )",
     "ticket": "Rp. 5.000/orang",
-    "image": "assets/images/tours/banyubiru.jpg",
+    "image": "assets/images/banyubiru.jpg",
   },
   {
     "name": "Pantai Penunggul",
@@ -220,7 +220,7 @@ var tourData = [
     "address": "Desa Penunggul, Kecamatan Nguling, Kabupaten Pasuruan",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/penunggul.jpg",
+    "image": "assets/images/penunggul.jpg",
   },
   {
     "name": "Pantai Lekok",
@@ -230,7 +230,7 @@ var tourData = [
     "address": "Pengaletan, Jatirejo, Lekok, Pasuruan, Jawa Timur",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/pantai_lekok.jpg",
+    "image": "assets/images/pantai_lekok.jpg",
   },
   {
     "name": "Bukit Flora",
@@ -241,7 +241,7 @@ var tourData = [
         "Jl. Raya Tutur, Krajan Satu, Tutur, Nongkojajar, Pasuruan, Jawa Timur 67165",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 3.000/orang",
-    "image": "assets/images/tours/bukit_flora.jpg",
+    "image": "assets/images/bukit_flora.jpg",
   },
   {
     "name": "Taman Safari II Prigen",
@@ -251,7 +251,7 @@ var tourData = [
     "address": "Desa Jatiarjo RT.12/RW.06, Prigen, Pasuruan, Jawa Timur 67157",
     "open": "Setiap hari ( Jam 08.00 - 19.00 )",
     "ticket": "Hari biasa Rp 70.000/orang dan Weekend Rp. 85.000/orang",
-    "image": "assets/images/tours/tsi.jpg",
+    "image": "assets/images/tsi.jpg",
   },
   {
     "name": "Tretes",
@@ -261,7 +261,7 @@ var tourData = [
     "address": "Tretes, Prigen, Pasuruan",
     "open": "Setiap hari (24 jam)",
     "ticket": "-",
-    "image": "assets/images/tours/villa_tretes.jpg",
+    "image": "assets/images/villa_tretes.jpg",
   },
   {
     "name": "Pines Taman Dayu",
@@ -271,7 +271,7 @@ var tourData = [
     "address": "Jalan Raya Surabaya – Malang KM 48, Pandaan, Prigen, Pasuruan",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/pines_taman_dayu.jpg",
+    "image": "assets/images/pines_taman_dayu.jpg",
   },
   {
     "name": "Masjid Cheng Hoo",
@@ -282,7 +282,7 @@ var tourData = [
         "Jl. Raya Kasri No.18, Petung Sari, Petungasri, Pandaan, Pasuruan, Jawa Timur 67156",
     "open": "Setiap hari (24 jam)",
     "ticket": "-",
-    "image": "assets/images/tours/chengho.jpg",
+    "image": "assets/images/chengho.jpg",
   },
   {
     "name": "Kebun Pak Budi",
@@ -293,7 +293,7 @@ var tourData = [
         "Dusun Canggih, Desa Sekarmojo, Kecamatan Purwosari, Pasuruan, Jawa Timur",
     "open": "Setiap hari ( Jam 08.00 - 20.00 )",
     "ticket": "Hari biasa Rp. 35.000/orang dan Weekend Rp. 50.000/orang",
-    "image": "assets/images/tours/pakbudi.jpg",
+    "image": "assets/images/pakbudi.jpg",
   },
   {
     "name": "Alun-alun Pasuruan",
@@ -304,7 +304,7 @@ var tourData = [
         "Jl. Alun-Alun Sel., Kebonsari, Panggungrejo, Kota Pasuruan, Jawa Timur 67116",
     "open": "Setiap hari (24 jam)",
     "ticket": "-",
-    "image": "assets/images/tours/alun2.jpg",
+    "image": "assets/images/alun2.jpg",
   },
   {
     "name": "Taman Hayati",
@@ -314,7 +314,7 @@ var tourData = [
     "address": "Petahunan, Gadingrejo, Kota Pasuruan, Jawa Timur 67136",
     "open": "Setiap hari (24 jam)",
     "ticket": "-",
-    "image": "assets/images/tours/taman_hayati.jpg",
+    "image": "assets/images/taman_hayati.jpg",
   },
   {
     "name": "Taman Gor Untung Suropati",
@@ -325,7 +325,7 @@ var tourData = [
         "Jl. Sultan Agung, Purutrejo, Purworejo, Kota Pasuruan, Jawa Timur 67127",
     "open": "Setiap hari (24 jam)",
     "ticket": "-",
-    "image": "assets/images/tours/gor.jpg",
+    "image": "assets/images/gor.jpg",
   },
   {
     "name": "Hutan Mangrove Nguling",
@@ -335,7 +335,7 @@ var tourData = [
     "address": "Desa Penunggul, kecamatan Nguling, Pasuruan",
     "open": "Setiap hari ( Jam 09.00 - 18.00 )",
     "ticket": "Rp. 5.000/orang",
-    "image": "assets/images/tours/mangrove.jpg",
+    "image": "assets/images/mangrove.jpg",
   },
   {
     "name": "Gunung Arjuno",
@@ -345,7 +345,7 @@ var tourData = [
     "address": "Prigen, Pasuruan",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/arjuno.jpg",
+    "image": "assets/images/arjuno.jpg",
   },
   {
     "name": "Pintu Langit",
@@ -356,7 +356,7 @@ var tourData = [
         "Jl. Raya Tulang, Ledug, Kec. Prigen, Pasuruan, Jawa Timur 67157",
     "open": "Setiap hari (Jam 09.00 - 22.00)",
     "ticket": "-",
-    "image": "assets/images/tours/pintulangit.jpg",
+    "image": "assets/images/pintulangit.jpg",
   },
   {
     "name": "Jendela Langit",
@@ -366,7 +366,7 @@ var tourData = [
     "address": "Talunongko, Prigen, Pasuruan",
     "open": "Setiap hari (24 jam)",
     "ticket": "Rp. 10.000/orang",
-    "image": "assets/images/tours/jendelalangit.jpg",
+    "image": "assets/images/jendelalangit.jpg",
   },
   {
     "name": "Kaliandra Resort",
@@ -376,7 +376,7 @@ var tourData = [
     "address": "Jatiarjo, Prigen, Pasuruan",
     "open": "Setiap hari (Jam 09.00 - 22.00)",
     "ticket": "-",
-    "image": "assets/images/tours/kaliandra.jpg",
+    "image": "assets/images/kaliandra.jpg",
   },
   {
     "name": "Cempaka",
@@ -386,6 +386,16 @@ var tourData = [
     "address": "Talunongko, Prigen, Pasuruan",
     "open": "Setiap hari (Jam 09.00 - 22.00)",
     "ticket": "-",
-    "image": "assets/images/tours/cempaka.jpg",
+    "image": "assets/images/cempaka.jpg",
+  },
+  {
+    "name": "Kedai Matanai",
+    "description":
+        "Matanai Coffee and Herbs Pasuruan – Pasuruan selalu menghadirkan tempat – tempat menarik untuk dikunjungi apalagi wisata kulinernya tentunya sangat menarik untuk mampir dan bersantai di tempat tersebut, kali ini kami akan menginformasikan ke Anda mengenai tempat ngopi atau wisata kuliner yang viral di kawasan Prigen, Pasuruan, Jawa Timur. Tentunya tempat ini dapat menjadi solusi akhir pekan Anda atau ngobrol santai bersama keluarga, teman maupun pasangan Anda.",
+    "location": "Prigen, Pasuruan",
+    "address": "Watuagung, Prigen, Pasuruan",
+    "open": "Setiap hari (Jam 07.00 - 00.00)",
+    "ticket": "-",
+    "image": "assets/images/matanai.jpg",
   },
 ];
