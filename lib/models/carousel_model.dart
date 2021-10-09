@@ -9,7 +9,7 @@ List<CarouselModel> carousels = carouselsData
     .toList();
 
 var carouselsData = [
-  {"image": "assets/images/tours/tsi.jpg"},
-  {"image": "assets/images/tours/cempaka.jpg"},
-  {"image": "assets/images/tours/jendelalangit.jpg"},
+  {"image": "assets/images/tsi.jpg"},
+  {"image": "assets/images/cempaka.jpg"},
+  {"image": "assets/images/jendelalangit.jpg"},
 ];
