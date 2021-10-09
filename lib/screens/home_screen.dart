@@ -36,16 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 CarouselWidget(),
                 CategoryWidget(),
                 PopularTour(),
-                // Flexible(
-                //   child: ListView.builder(
-                //     itemCount: 10,
-                //     physics: NeverScrollableScrollPhysics(),
-                //     shrinkWrap: true,
-                //     itemBuilder: (context, index) => ListTile(
-                //       title: Text("List $index"),
-                //     ),
-                //   ),
-                // ),
               ],
             ),
           ),

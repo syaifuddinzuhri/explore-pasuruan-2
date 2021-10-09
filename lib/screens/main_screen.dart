@@ -11,7 +11,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
-  List<Widget> _widgetOptions = <Widget>[
+  List<Widget> _pages = <Widget>[
     HomeScreen(),
     TourScreen(),
     ProfileScreen(),
@@ -49,7 +49,8 @@ class _MainScreenState extends State<MainScreen> {
           });
         },
       ),
-      body: _widgetOptions.elementAt(_selectedIndex),
+      // body: _buildScreens(),
+      body: _pages.elementAt(_selectedIndex),
     );
   }
 }
