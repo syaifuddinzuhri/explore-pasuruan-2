@@ -168,7 +168,7 @@ var tourData = [
     "address": "Jalan Taman Wisata No.541, Semeru, Pasuruan",
     "open": "Setiap hari ( Jam 07.00 - 18.00 )",
     "ticket": "Rp. 5.000/orang",
-    "image": "assets/images/kekekbodo.jpg",
+    "image": "assets/images/kakekbodo.jpg",
   },
   {
     "name": "Air Terjun Sumber Nyonya",
