@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:miniproject/constants/color_constant.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,7 +15,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: mBackgroundColor,
-        title: SvgPicture.asset('assets/svg/explore_pasuruan_logo.svg'),
+        title: Container(
+          width: 110,
+          child: Image.asset("assets/images/logo.png", fit: BoxFit.fill)),
         elevation: 0,
       ),
       body: Center(

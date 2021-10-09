@@ -41,13 +41,6 @@ class _MainScreenState extends State<MainScreen> {
                 backgroundImage: AssetImage("assets/images/avatar.jpg"),
               ),
               // icon: Icon(Icons.person_add_alt_1_outlined),
-              activeIcon: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(500),
-                      border: Border.all(color: Colors.blue)),
-                  child: CircleAvatar(
-                      radius: 11.0,
-                      backgroundImage: AssetImage("assets/images/avatar.jpg"))),
               label: '')
         ],
         onTap: (index) {
