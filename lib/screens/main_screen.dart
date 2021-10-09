@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject/screens/search_screen.dart';
+import 'package:miniproject/constants/color_constant.dart';
+import 'package:miniproject/screens/tour_screen.dart';
 import 'package:miniproject/screens/home_screen.dart';
 import 'package:miniproject/screens/profile_screen.dart';
 
@@ -13,7 +14,7 @@ class _MainScreenState extends State<MainScreen> {
 
   List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    SearchScreen(),
+    TourScreen(),
     ProfileScreen(),
   ];
 
@@ -29,18 +30,24 @@ class _MainScreenState extends State<MainScreen> {
         items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined),
-              activeIcon: Icon(Icons.home),
-              label: ''),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.search_outlined),
-              activeIcon: Icon(Icons.search),
-              label: ''),
-          BottomNavigationBarItem(
-              icon: CircleAvatar(
-                radius: 11.0,
-                backgroundImage: AssetImage("assets/images/avatar.jpg"),
+              activeIcon: Icon(
+                Icons.home,
+                color: mBlueColor,
               ),
-              // icon: Icon(Icons.person_add_alt_1_outlined),
+              label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.attractions_outlined),
+              activeIcon: Icon(
+                Icons.attractions,
+                color: mBlueColor,
+              ),
+              label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.info_outline),
+              activeIcon: Icon(
+                Icons.info,
+                color: mBlueColor,
+              ),
               label: '')
         ],
         onTap: (index) {
