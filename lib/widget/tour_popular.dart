@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:miniproject/constants/style_constant.dart';
 import 'package:miniproject/models/popular_model.dart';
+import 'package:miniproject/screens/detail_tour.dart';
 
 class PopularTour extends StatefulWidget {
   @override
@@ -31,55 +32,65 @@ class _PopularTourState extends State<PopularTour> {
               itemCount: populars.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Container(
-                  margin: EdgeInsets.only(right: 16),
-                  width: 220,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Stack(
-                        children: <Widget>[
-                          Container(
-                            height: 104,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8),
-                              image: DecorationImage(
-                                  image: AssetImage(populars[index].image),
-                                  fit: BoxFit.cover),
+                return GestureDetector(
+                  child: Container(
+                    margin: EdgeInsets.only(right: 16),
+                    width: 220,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Stack(
+                          children: <Widget>[
+                            Container(
+                              height: 104,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                    image: AssetImage(populars[index].image),
+                                    fit: BoxFit.cover),
+                              ),
                             ),
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            child: SvgPicture.asset(
-                                'assets/svg/bottom_gradient.svg'),
-                          ),
-                          Positioned(
-                            bottom: 8,
-                            left: 8,
-                            child: Text(
-                              populars[index].name,
-                              style: mListTitleStyle,
+                            Positioned(
+                              bottom: 0,
+                              child: SvgPicture.asset(
+                                  'assets/svg/bottom_gradient.svg'),
                             ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        populars[index].description,
-                        maxLines: 2,
-                        style: mListContentStyle,
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        populars[index].location,
-                        style: mListPlaceStyle,
-                      )
-                    ],
+                            Positioned(
+                              bottom: 8,
+                              left: 8,
+                              child: Text(
+                                populars[index].name,
+                                style: mListTitleStyle,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          populars[index].description,
+                          maxLines: 2,
+                          style: mListContentStyle,
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          populars[index].location,
+                          style: mListPlaceStyle,
+                        )
+                      ],
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DetailTourScreen(index),
+                      ),
+                    );
+                  },
                 );
               },
             ),
