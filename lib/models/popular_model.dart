@@ -44,15 +44,14 @@ var popularData = [
     "image": "assets/images/tsi.jpg",
   },
   {
-    "name": "Pintu Langit",
+    "name": "Kedai Matanai",
     "description":
-        "Wisata Pintu Langit ini hadir sebagai tempat rekreasi untuk keluarga. Kamu bisa mengajak keluarga untuk liburan bersama-sama di wisata ini. Suasananya sangat nyaman, banyak pohon hijau yang rindang juga membuat asri. Belum lagi pemandangan gunung Arjuno yang sangat mempesona. Tentu ini menjadi tempat berlibur yang pas untuk keluarga. Sebenarnya konsep utama wisata ini ialah suguhan cafe untuk nongkrong asyik. Sebagaimana kalimat yang gencar dipromosikan “Ngopi Bareng Pintu Langit“. Pihak pengelola wisata sangat kreatif. Apa yang disuguhkan untuk para pengunjung yang datang ke tempat ini benar-benar komplit, tidak hanya sebuah cafe kekinian dengan segala keindahan alam sekitar yang menjadi view nya, tetapi juga aneka wahana permainan yang asyik untuk dinikmati keseruannya, misalnya; Bianglala, Ombak Banyu, Becak Terbang, Spot Foto dan lain-lain.",
+        "Matanai Coffee and Herbs Pasuruan – Pasuruan selalu menghadirkan tempat – tempat menarik untuk dikunjungi apalagi wisata kulinernya tentunya sangat menarik untuk mampir dan bersantai di tempat tersebut, kali ini kami akan menginformasikan ke Anda mengenai tempat ngopi atau wisata kuliner yang viral di kawasan Prigen, Pasuruan, Jawa Timur. Tentunya tempat ini dapat menjadi solusi akhir pekan Anda atau ngobrol santai bersama keluarga, teman maupun pasangan Anda.",
     "location": "Prigen, Pasuruan",
-    "address":
-        "Jl. Raya Tulang, Ledug, Kec. Prigen, Pasuruan, Jawa Timur 67157",
-    "open": "Setiap hari (Jam 09.00 - 22.00)",
+    "address": "Watuagung, Prigen, Pasuruan",
+    "open": "Setiap hari (Jam 07.00 - 00.00)",
     "ticket": "-",
-    "image": "assets/images/pintulangit.jpg",
+    "image": "assets/images/matanai.jpg",
   },
   {
     "name": "Tretes",
