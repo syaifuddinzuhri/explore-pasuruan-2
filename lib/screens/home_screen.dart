@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
-import 'package:miniproject/constants/color_constant.dart';
-import 'package:miniproject/models/carousel_model.dart';
+import 'package:miniproject/constants/style_constant.dart';
+import 'package:miniproject/widget/carousel_widget.dart';
+import 'package:miniproject/widget/category_widget.dart';
+import 'package:miniproject/widget/custom_appbar.dart';
+import 'package:miniproject/widget/tour_popular.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -15,54 +17,35 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: mBackgroundColor,
-          title: Container(
-              width: 110,
-              child: Image.asset("assets/images/logo.png", fit: BoxFit.fill)),
-          elevation: 0,
-        ),
+        appBar: CustomAppBar(),
         body: Container(
           margin: EdgeInsets.only(left: 16, right: 16),
           child: SingleChildScrollView(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                Container(
-                  margin: EdgeInsets.only(top: 16),
-                  alignment: Alignment.centerLeft,
-                  width: MediaQuery.of(context).size.width,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 190,
-                        child: Swiper(
-                          onIndexChanged: (index) {},
-                          autoplay: true,
-                          layout: SwiperLayout.DEFAULT,
-                          viewportFraction: 0.8,
-                          scale: 0.9,
-                          itemCount: carousels.length,
-                          pagination:
-                              SwiperPagination(margin: EdgeInsets.all(5.0)),
-                          itemBuilder: (BuildContext context, index) {
-                            return Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                image: DecorationImage(
-                                    image: AssetImage(carousels[index].image),
-                                    fit: BoxFit.fill),
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                    ],
+                Padding(
+                  padding: EdgeInsets.only(top: 16),
+                  child: Text(
+                    'Hi, Syaifuddin Zuhri 👋!',
+                    style: mTitleStyle,
                   ),
                 ),
+                CarouselWidget(),
+                CategoryWidget(),
+                PopularTour(),
+                // Flexible(
+                //   child: ListView.builder(
+                //     itemCount: 10,
+                //     physics: NeverScrollableScrollPhysics(),
+                //     shrinkWrap: true,
+                //     itemBuilder: (context, index) => ListTile(
+                //       title: Text("List $index"),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),
