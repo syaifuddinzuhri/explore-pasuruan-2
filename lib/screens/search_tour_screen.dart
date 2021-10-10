@@ -48,7 +48,7 @@ class _SearchTourScreenState extends State<SearchTourScreen> {
                     suffixIcon: IconButton(
                       icon: Icon(Icons.clear),
                       onPressed: () {
-                        this.dispose();
+                        _textEditingController.clear();
                         setState(() {
                           filteredTour = [];
                         });
@@ -58,21 +58,27 @@ class _SearchTourScreenState extends State<SearchTourScreen> {
                     border: InputBorder.none),
                 onChanged: (val) {
                   setState(() {
-                    filteredTour = tours
-                        .where((el) => (el.name
-                                .toLowerCase()
-                                .contains(val.toLowerCase()) ||
-                            el.location
-                                .toLowerCase()
-                                .contains(val.toLowerCase()) ||
-                            el.address
-                                .toLowerCase()
-                                .contains(val.toLowerCase()) ||
-                            el.open.toLowerCase().contains(val.toLowerCase()) ||
-                            el.ticket
-                                .toLowerCase()
-                                .contains(val.toLowerCase())))
-                        .toList();
+                    if (val == "") {
+                      filteredTour = [];
+                    } else {
+                      filteredTour = tours
+                          .where((el) => (el.name
+                                  .toLowerCase()
+                                  .contains(val.toLowerCase()) ||
+                              el.location
+                                  .toLowerCase()
+                                  .contains(val.toLowerCase()) ||
+                              el.address
+                                  .toLowerCase()
+                                  .contains(val.toLowerCase()) ||
+                              el.open
+                                  .toLowerCase()
+                                  .contains(val.toLowerCase()) ||
+                              el.ticket
+                                  .toLowerCase()
+                                  .contains(val.toLowerCase())))
+                          .toList();
+                    }
                   });
                 },
               ),

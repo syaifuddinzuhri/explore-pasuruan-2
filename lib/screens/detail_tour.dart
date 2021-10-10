@@ -56,7 +56,7 @@ class _DetailTourScreenState extends State<DetailTourScreen> {
                 return FlexibleSpaceBar(
                     title: AnimatedOpacity(
                         duration: Duration(milliseconds: 200),
-                        opacity: top == 80.0 ? 1.0 : 0.0,
+                        opacity: top <= 80.0 ? 1.0 : 0.0,
                         // opacity: 1.0,
                         child: Text(item.name,
                             style: TextStyle(color: mBlueColor))),
