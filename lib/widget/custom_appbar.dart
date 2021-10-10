@@ -18,33 +18,21 @@ class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        backgroundColor: Colors.transparent,
-        leading: Navigator.canPop(context)
-            ? IconButton(
-                icon: Icon(
-                  Icons.arrow_back,
-                  color: mSubtitleColor,
-                ),
-                onPressed: () => Navigator.of(context).pop(),
-              )
-            : null,
-        title: Container(
-            width: 110,
-            child: Image.asset("assets/images/logo.png", fit: BoxFit.fill)),
-        elevation: 0,
-        actions: [
-          PopupMenuButton<String>(
-              icon: Icon(Icons.more_vert, color: mSubtitleColor),
-              onSelected: handleClick,
-              itemBuilder: (BuildContext context) {
-                return {'Profile'}.map((String choice) {
-                  return PopupMenuItem<String>(
-                    value: choice,
-                    child: Text(choice),
-                  );
-                }).toList();
-              })
-        ]);
+      backgroundColor: Colors.transparent,
+      leading: Navigator.canPop(context)
+          ? IconButton(
+              icon: Icon(
+                Icons.arrow_back,
+                color: mSubtitleColor,
+              ),
+              onPressed: () => Navigator.of(context).pop(),
+            )
+          : null,
+      title: Container(
+          width: 110,
+          child: Image.asset("assets/images/logo.png", fit: BoxFit.fill)),
+      elevation: 0,
+    );
   }
 
   void handleClick(String value) {
