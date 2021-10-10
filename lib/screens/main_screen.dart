@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:miniproject/screens/tour_screen.dart';
 import 'package:miniproject/screens/home_screen.dart';
@@ -19,38 +20,26 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedIndex,
-        type: BottomNavigationBarType.fixed,
-        showSelectedLabels: false, // <-- HERE
-        showUnselectedLabels: false,
-        items: [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined),
-              activeIcon: Icon(Icons.home),
-              label: ''),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.attractions_outlined),
-              activeIcon: Icon(Icons.attractions),
-              label: ''),
-          BottomNavigationBarItem(
-              icon: CircleAvatar(
-                radius: 11.0,
-                backgroundImage: AssetImage("assets/images/avatar.jpg"),
-              ),
-              // icon: Icon(Icons.person_add_alt_1_outlined),
-              label: '')
-        ],
-        onTap: (index) {
-          setState(() {
-            _selectedIndex = index;
-          });
-        },
-      ),
-      // body: _buildScreens(),
-      body: _pages.elementAt(_selectedIndex),
+    return CupertinoTabScaffold(
+      tabBar: CupertinoTabBar(items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined), activeIcon: Icon(Icons.home)),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.attractions_outlined),
+          activeIcon: Icon(Icons.attractions),
+        ),
+        BottomNavigationBarItem(
+          icon: CircleAvatar(
+            radius: 11.0,
+            backgroundImage: AssetImage("assets/images/avatar.jpg"),
+          ),
+        )
+      ]),
+      tabBuilder: (ctx, idx) {
+        return CupertinoTabView(builder: (ctx) {
+          return CupertinoPageScaffold(child: _pages.elementAt(idx));
+        });
+      },
     );
   }
 }
