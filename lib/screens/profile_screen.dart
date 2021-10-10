@@ -1,79 +1,69 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:miniproject/constants/style_constant.dart';
+import 'package:miniproject/constants/color_constant.dart';
 
 class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Stack(
-          alignment: Alignment.center,
-          clipBehavior: Clip.none,
-          children: <Widget>[
-            Image(
-              image: AssetImage("assets/images/hero.png"),
-              fit: BoxFit.cover,
-              height: MediaQuery.of(context).size.height / 3,
-            ),
-            Positioned(
-                bottom: -90,
+    return Scaffold(
+        body: SingleChildScrollView(
+      child: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/images/hero.png"),
+                      fit: BoxFit.cover)),
+              child: Container(
+                width: double.infinity,
+                height: 210,
                 child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    shape: BoxShape.circle,
-                    boxShadow: [
-                      BoxShadow(
-                          blurRadius: 10,
-                          color: Colors.black26,
-                          spreadRadius: 5)
-                    ],
-                  ),
+                  alignment: Alignment(0.0, 2.5),
                   child: CircleAvatar(
-                    radius: 85,
+                    radius: 65,
                     backgroundColor: Colors.white,
                     child: CircleAvatar(
-                      radius: 80,
-                      backgroundImage: AssetImage("assets/images/avatar.jpg"),
+                      radius: 60,
+                      backgroundImage: AssetImage('assets/images/avatar.jpg'),
                     ),
                   ),
-                ))
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 70,
+            ),
+            Text(
+              "Mochammad Syaifuddin Zuhri",
+              style: TextStyle(
+                  fontSize: 25.0,
+                  color: mBlueColor,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "Prigen, Pasuruan",
+              style: TextStyle(
+                  fontSize: 14,
+                  color: mSubtitleColor,
+                  fontWeight: FontWeight.w300),
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Text(
+              "State Polytechnic of Malang",
+              style: TextStyle(
+                  fontSize: 15.0,
+                  color: Colors.black45,
+                  fontWeight: FontWeight.w400),
+            ),
           ],
         ),
-        SizedBox(
-          height: 120,
-        ),
-        Text(
-          "Syaifuddin Zuhri",
-          style: mCardTitleStyle2,
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        Text(
-          "Prigen, Pasuruan",
-          style: mTitleStyle,
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        Text(
-          "State Polytechnic of Malang",
-          style: mTitleStyle,
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        Card(
-            margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
-            elevation: 2.0,
-            child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 30),
-                child: Text(
-                  "Traveller",
-                  style: TextStyle(fontWeight: FontWeight.w300),
-                ))),
-      ],
-    );
+      ),
+    ));
   }
 }

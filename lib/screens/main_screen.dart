@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:miniproject/constants/color_constant.dart';
+import 'package:miniproject/screens/search_tour_screen.dart';
 import 'package:miniproject/screens/tour_screen.dart';
 import 'package:miniproject/screens/home_screen.dart';
 import 'package:miniproject/screens/profile_screen.dart';
@@ -14,6 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   List<Widget> _pages = <Widget>[
     HomeScreen(),
     TourScreen(),
+    SearchTourScreen(),
     ProfileScreen(),
   ];
 
@@ -30,6 +32,10 @@ class _MainScreenState extends State<MainScreen> {
         BottomNavigationBarItem(
           icon: Icon(Icons.attractions_outlined),
           activeIcon: Icon(Icons.attractions, color: mBlueColor),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.search_outlined),
+          activeIcon: Icon(Icons.search, color: mBlueColor),
         ),
         BottomNavigationBarItem(
           icon: CircleAvatar(

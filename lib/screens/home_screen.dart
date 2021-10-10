@@ -19,19 +19,16 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         appBar: CustomAppBar(),
         body: Container(
-          margin: EdgeInsets.only(left: 16, right: 16),
+          margin: EdgeInsets.all(16),
           child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                Padding(
-                  padding: EdgeInsets.only(top: 16),
-                  child: Text(
-                    'Hi, Syaifuddin Zuhri 👋!',
-                    style: mTitleStyle,
-                  ),
+                Text(
+                  'Hi, Syaifuddin Zuhri 👋!',
+                  style: mTitleStyle,
                 ),
                 CarouselWidget(),
                 CategoryWidget(),
