@@ -99,7 +99,8 @@ class _TourScreenState extends State<TourScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => DetailTourScreen(index),
+                              builder: (context) =>
+                                  DetailTourScreen(tours[index].id, 'tour'),
                             ),
                           );
                         },

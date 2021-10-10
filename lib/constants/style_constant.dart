@@ -13,6 +13,11 @@ var mServiceSubtitleStyle = GoogleFonts.inter(
     fontWeight: FontWeight.w400, fontSize: 10, color: mSubtitleColor);
 
 // Style for Card Section
+var mCardTitleStyle2 = GoogleFonts.inter(
+  fontWeight: FontWeight.w700,
+  fontSize: 24,
+  color: mCardTitleColor,
+);
 var mCardTitleStyle = GoogleFonts.inter(
   fontWeight: FontWeight.w700,
   fontSize: 16,
@@ -20,7 +25,7 @@ var mCardTitleStyle = GoogleFonts.inter(
 );
 var mCardSubtitleStyle = GoogleFonts.inter(
   fontWeight: FontWeight.w500,
-  fontSize: 10,
+  fontSize: 12,
   color: mCardSubtitleColor,
 );
 

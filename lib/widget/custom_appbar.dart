@@ -18,7 +18,16 @@ class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        backgroundColor: mBackgroundColor,
+        backgroundColor: Colors.transparent,
+        leading: Navigator.canPop(context)
+            ? IconButton(
+                icon: Icon(
+                  Icons.arrow_back,
+                  color: mSubtitleColor,
+                ),
+                onPressed: () => Navigator.of(context).pop(),
+              )
+            : null,
         title: Container(
             width: 110,
             child: Image.asset("assets/images/logo.png", fit: BoxFit.fill)),

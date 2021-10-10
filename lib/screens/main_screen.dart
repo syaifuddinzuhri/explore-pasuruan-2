@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:miniproject/constants/color_constant.dart';
 import 'package:miniproject/screens/tour_screen.dart';
 import 'package:miniproject/screens/home_screen.dart';
 import 'package:miniproject/screens/profile_screen.dart';
@@ -10,8 +11,6 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  int _selectedIndex = 0;
-
   List<Widget> _pages = <Widget>[
     HomeScreen(),
     TourScreen(),
@@ -23,10 +22,14 @@ class _MainScreenState extends State<MainScreen> {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined), activeIcon: Icon(Icons.home)),
+            icon: Icon(Icons.home_outlined),
+            activeIcon: Icon(
+              Icons.home,
+              color: mBlueColor,
+            )),
         BottomNavigationBarItem(
           icon: Icon(Icons.attractions_outlined),
-          activeIcon: Icon(Icons.attractions),
+          activeIcon: Icon(Icons.attractions, color: mBlueColor),
         ),
         BottomNavigationBarItem(
           icon: CircleAvatar(

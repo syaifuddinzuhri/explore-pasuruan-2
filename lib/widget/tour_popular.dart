@@ -87,7 +87,8 @@ class _PopularTourState extends State<PopularTour> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => DetailTourScreen(index),
+                        builder: (context) =>
+                            DetailTourScreen(populars[index].id, 'popular'),
                       ),
                     );
                   },
