@@ -20,7 +20,7 @@ class _PopularTourState extends State<PopularTour> {
         Padding(
           padding: EdgeInsets.only(top: 16),
           child: Text(
-            'Kategori Wisata Terpopuler',
+            'Wisata Terpopuler',
             style: mTitleStyle,
           ),
         ),

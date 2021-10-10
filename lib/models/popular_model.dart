@@ -43,7 +43,7 @@ var popularData = [
         "Ingin obyek wisata yang bisa dinikmati oleh seluruh keluarga termasuk anak-anak juga? Langsung saja berangkat ke Taman Safari Prigen yang namanya juga sudah terkenal tidak hanya se-Pasuruan namun se-Indonesia. Saat hari libur dan akhir pekan, sudah bisa dipastikan tempat ini akan ramai dengan wisatawan dari dalam maupun luar negeri. Tempat wisata ini mempunyai konsep yang sama dengan Taman Safari I. Anda dapat mengelilingi kawasan wisata Taman Safari Prigen II ini dengan menggunakan mobil pribadi atau juga bus wisata dan melihat secara langsung hewan-hewan yang dilepas bebas di kawasan ini. Udara yang ada di kawasan ini memang sejuk karena berada di lereng gunung Arjuna pada ketinggian 800 mdpl, tempat ini menjadi salah satu tempat yang nyaman untuk anda kunjungi bersama keluarga maupun teman-teman.",
     "location": "Prigen, Pasuruan",
     "address": "Desa Jatiarjo RT.12/RW.06, Prigen, Pasuruan, Jawa Timur 67157",
-    "open": "Setiap hari ( Jam 08.00 - 19.00 )",
+    "open": "Jam 08.00 - 19.00",
     "ticket": "Rp 70.000/orang",
     "image": "assets/images/tsi.jpg",
   },

@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:miniproject/constants/color_constant.dart';
-import 'package:miniproject/constants/style_constant.dart';
 import 'package:miniproject/models/popular_model.dart';
 import 'package:miniproject/models/tour_model.dart';
 

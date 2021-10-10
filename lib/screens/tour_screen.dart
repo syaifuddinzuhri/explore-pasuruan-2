@@ -26,12 +26,9 @@ class _TourScreenState extends State<TourScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                Padding(
-                  padding: EdgeInsets.only(top: 16),
-                  child: Text(
-                    'Hi, Syaifuddin Zuhri 👋!',
-                    style: mTitleStyle,
-                  ),
+                Text(
+                  'Semua Wisata di Pasuruan',
+                  style: mTitleStyle,
                 ),
                 Flexible(
                   child: ListView.builder(
