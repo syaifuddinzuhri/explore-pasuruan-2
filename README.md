@@ -41,4 +41,4 @@ Seiring berjalannya waktu dengan dikembangkan aplikasi ini tentunya akan ada pen
 
 ## Link Video Presentasi dan Demo 
 
-[Klik Untuk Melihat Video]('https://youtu.be/VrrGRClxXkw')
+### https://youtu.be/VrrGRClxXkw
