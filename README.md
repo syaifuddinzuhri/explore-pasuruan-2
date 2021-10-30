@@ -10,7 +10,7 @@ Melihat banyaknya objek wisata yang ada di wilayah kabupaten dan kota pasuruan. 
 
 Didalam aplikasi XP ini terdapat beberapa fitur sementara yang disediakan, diantaranya:
 
-Menampilkan objek-objek wisata yang ada di kabupaten dan kota pasuruan
+Menampilkan objek-objek wisata yang ada di kabupaten dan kota pasuruan, 
 Menampilkan deskripsi dari masing-masing wisata seprti harga tiket, alamat, jam buka, fasilitas dan lain sebagainya.
 Fitur pencarian untuk memudahkan mencari objek wisata tertentu berdasarkan keyword yang dimasukkan
 Seiring berjalannya waktu dengan dikembangkan aplikasi ini tentunya akan ada penambahan fitur-fitur yang dapat memberikan kompleksitas aplikasi ini. seperti fitur login, register, booking wisata dan lain sebagainya. Selain itu juga bisa ditambahkan dengan informasi lainnya seperti informasi hotel atau penginapan, restoran, kuliner dan lain-lain. Sehingga dapat memberikan kompleksitas yang tinggi dengan dibuatnya aplikasi ini.
@@ -38,3 +38,7 @@ Seiring berjalannya waktu dengan dikembangkan aplikasi ini tentunya akan ada pen
 
 [<img src="docs/profile.png" width="250"/>](docs/profile.png)
 
+
+## Link Video Presentasi dan Demo 
+
+[Klik Untuk Melihat Video]('https://youtu.be/VrrGRClxXkw')
