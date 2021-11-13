@@ -4,17 +4,17 @@ import 'package:miniproject/constants/color_constant.dart';
 import 'package:miniproject/models/popular_model.dart';
 import 'package:miniproject/models/tour_model.dart';
 
-class DetailTourScreen extends StatefulWidget {
+class DetailTourPage extends StatefulWidget {
   final String id;
   final String param;
 
-  DetailTourScreen(this.id, this.param);
+  DetailTourPage(this.id, this.param);
 
   @override
-  State<DetailTourScreen> createState() => _DetailTourScreenState();
+  State<DetailTourPage> createState() => _DetailTourPageState();
 }
 
-class _DetailTourScreenState extends State<DetailTourScreen> {
+class _DetailTourPageState extends State<DetailTourPage> {
   var top = 0.0;
 
   @override

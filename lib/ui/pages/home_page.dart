@@ -1,19 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:miniproject/constants/style_constant.dart';
-import 'package:miniproject/widget/carousel_widget.dart';
-import 'package:miniproject/widget/category_widget.dart';
-import 'package:miniproject/widget/custom_appbar.dart';
-import 'package:miniproject/widget/tour_popular.dart';
+import 'package:miniproject/ui/widgets/carousel_widget.dart';
+import 'package:miniproject/ui/widgets/category_widget.dart';
+import 'package:miniproject/ui/widgets/custom_appbar.dart';
+import 'package:miniproject/ui/widgets/tour_popular.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -4,16 +4,16 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:miniproject/constants/color_constant.dart';
 import 'package:miniproject/constants/style_constant.dart';
 import 'package:miniproject/models/tour_model.dart';
-import 'package:miniproject/screens/detail_tour.dart';
+import 'package:miniproject/ui/pages/detail_tour_page.dart';
 
-class SearchTourScreen extends StatefulWidget {
-  const SearchTourScreen({Key? key}) : super(key: key);
+class SearchTourPage extends StatefulWidget {
+  const SearchTourPage({Key? key}) : super(key: key);
 
   @override
-  _SearchTourScreenState createState() => _SearchTourScreenState();
+  _SearchTourPageState createState() => _SearchTourPageState();
 }
 
-class _SearchTourScreenState extends State<SearchTourScreen> {
+class _SearchTourPageState extends State<SearchTourPage> {
   List<TourModel> filteredTour = [];
   final FocusNode _textFocusNode = FocusNode();
   TextEditingController _textEditingController = TextEditingController();
@@ -203,7 +203,7 @@ class _SearchTourScreenState extends State<SearchTourScreen> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => DetailTourScreen(
+                                    builder: (context) => DetailTourPage(
                                         _textEditingController
                                                     .text.isNotEmpty &&
                                                 filteredTour.length == 0

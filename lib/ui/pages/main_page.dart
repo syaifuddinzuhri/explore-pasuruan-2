@@ -1,22 +1,22 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:miniproject/constants/color_constant.dart';
-import 'package:miniproject/screens/search_tour_screen.dart';
-import 'package:miniproject/screens/tour_screen.dart';
-import 'package:miniproject/screens/home_screen.dart';
-import 'package:miniproject/screens/profile_screen.dart';
+import 'package:miniproject/ui/pages/home_page.dart';
+import 'package:miniproject/ui/pages/profile_page.dart';
+import 'package:miniproject/ui/pages/search_tour_page.dart';
+import 'package:miniproject/ui/pages/tour_page.dart';
 
-class MainScreen extends StatefulWidget {
+class MainPage extends StatefulWidget {
   @override
-  _MainScreenState createState() => _MainScreenState();
+  _MainPageState createState() => _MainPageState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _MainPageState extends State<MainPage> {
   List<Widget> _pages = <Widget>[
-    HomeScreen(),
-    TourScreen(),
-    SearchTourScreen(),
-    ProfileScreen(),
+    HomePage(),
+    TourPage(),
+    SearchTourPage(),
+    ProfilePage(),
   ];
 
   @override
