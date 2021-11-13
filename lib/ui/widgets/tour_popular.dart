@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:miniproject/constants/style_constant.dart';
 import 'package:miniproject/models/popular_model.dart';
-import 'package:miniproject/screens/detail_tour.dart';
+import 'package:miniproject/ui/pages/detail_tour_page.dart';
 
 class PopularTour extends StatefulWidget {
   @override
@@ -88,7 +88,7 @@ class _PopularTourState extends State<PopularTour> {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            DetailTourScreen(populars[index].id, 'popular'),
+                            DetailTourPage(populars[index].id, 'popular'),
                       ),
                     );
                   },

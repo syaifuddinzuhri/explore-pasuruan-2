@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:miniproject/constants/style_constant.dart';
-import 'package:miniproject/widget/single_card_category.dart';
+import 'package:miniproject/ui/widgets/single_card_category.dart';
 
 class CategoryWidget extends StatefulWidget {
   const CategoryWidget({Key? key}) : super(key: key);
