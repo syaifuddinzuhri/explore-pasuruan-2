@@ -1,22 +1,22 @@
 class TourModel {
-  String? id;
-  String? name;
-  String? description;
-  String? location;
-  String? address;
-  String? open;
-  String? ticket;
-  String? image;
+  final int id;
+  final String name;
+  final String description;
+  final String location;
+  final String address;
+  final String open;
+  final String ticket;
+  final String image;
 
   TourModel(
-      {this.id,
-      this.name,
-      this.description,
-      this.location,
-      this.address,
-      this.open,
-      this.ticket,
-      this.image});
+      {required this.id,
+      required this.name,
+      required this.description,
+      required this.location,
+      required this.address,
+      required this.open,
+      required this.ticket,
+      required this.image});
 
   factory TourModel.fromJson(Map<String, dynamic> json) => TourModel(
         id: json['id'],

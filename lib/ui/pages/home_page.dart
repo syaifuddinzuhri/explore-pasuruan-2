@@ -4,7 +4,6 @@ import 'package:miniproject/constants/style_constant.dart';
 import 'package:miniproject/ui/widgets/carousel_widget.dart';
 import 'package:miniproject/ui/widgets/category_widget.dart';
 import 'package:miniproject/ui/widgets/custom_appbar.dart';
-import 'package:miniproject/ui/widgets/tour_popular.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -32,7 +31,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 CarouselWidget(),
                 CategoryWidget(),
-                PopularTour(),
+                // PopularTour(),
               ],
             ),
           ),

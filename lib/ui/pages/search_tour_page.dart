@@ -204,12 +204,11 @@ class _SearchTourPageState extends State<SearchTourPage> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) => DetailTourPage(
-                                        _textEditingController
-                                                    .text.isNotEmpty &&
-                                                filteredTour.length == 0
-                                            ? tours[index].id
-                                            : filteredTour[index].id,
-                                        'tour'),
+                                      _textEditingController.text.isNotEmpty &&
+                                              filteredTour.length == 0
+                                          ? tours[index].id
+                                          : filteredTour[index].id,
+                                    ),
                                   ),
                                 );
                               },

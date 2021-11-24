@@ -88,7 +88,7 @@ class _PopularTourState extends State<PopularTour> {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            DetailTourPage(populars[index].id, 'popular'),
+                            DetailTourPage(populars[index].id),
                       ),
                     );
                   },

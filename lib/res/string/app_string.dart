@@ -1,3 +1,3 @@
 class AppStrings {
-  static String baseUrl = "http://10.208.95.95:3000";
+  static String baseUrl = "http://192.168.1.106:8000/api";
 }

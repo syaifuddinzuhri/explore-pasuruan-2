@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:miniproject/bloc/tours/tour_bloc.dart';
 import 'package:miniproject/constants/style_constant.dart';
 import 'package:miniproject/ui/pages/detail_tour_page.dart';
 
@@ -13,6 +15,14 @@ class ToursWidget extends StatefulWidget {
 }
 
 class _ToursWidgetState extends State<ToursWidget> {
+  late TourBloc tourBloc;
+
+  @override
+  void initState() {
+    super.initState();
+    tourBloc = BlocProvider.of<TourBloc>(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -48,7 +58,7 @@ class _ToursWidgetState extends State<ToursWidget> {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
                                   image: DecorationImage(
-                                      image: AssetImage(
+                                      image: NetworkImage(
                                           widget.tours[index].image.toString()),
                                       fit: BoxFit.cover),
                                 ),
@@ -80,12 +90,30 @@ class _ToursWidgetState extends State<ToursWidget> {
                             maxLines: 2,
                             style: mListContentStyle,
                           ),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          Text(
-                            widget.tours[index].location.toString(),
-                            style: mListPlaceStyle,
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Text(
+                                widget.tours[index].location.toString(),
+                                style: mListPlaceStyle,
+                              ),
+                              // IconButton(
+                              //   icon: Icon(
+                              //     widget.tours[index].isFavorite
+                              //         ? Icons.favorite
+                              //         : Icons.favorite_border_outlined,
+                              //     color: Colors.red,
+                              //   ),
+                              //   onPressed: () {
+                              //     final snackBar = SnackBar(
+                              //         content: Text(
+                              //             widget.tours[index].name.toString() +
+                              //                 'added to your favourite'));
+                              //     ScaffoldMessenger.of(context)
+                              //         .showSnackBar(snackBar);
+                              //   },
+                              // )
+                            ],
                           )
                         ],
                       ),
@@ -94,8 +122,8 @@ class _ToursWidgetState extends State<ToursWidget> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => DetailTourPage(
-                              widget.tours[index].id.toString(), 'tour'),
+                          builder: (context) =>
+                              DetailTourPage(widget.tours[index].id.toString()),
                         ),
                       );
                     },

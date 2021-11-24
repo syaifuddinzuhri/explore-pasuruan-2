@@ -23,7 +23,7 @@ class _TourPageState extends State<TourPage> {
   void initState() {
     super.initState();
     tourBloc = BlocProvider.of<TourBloc>(context);
-    tourBloc.add(FetchToursEvent());
+    tourBloc.add(GetAllTours());
   }
 
   @override
@@ -32,7 +32,7 @@ class _TourPageState extends State<TourPage> {
       appBar: CustomAppBar(),
       body: RefreshIndicator(
         onRefresh: () async {
-          tourBloc.add(FetchToursEvent());
+          tourBloc.add(GetAllTours());
         },
         child: SingleChildScrollView(
           physics:

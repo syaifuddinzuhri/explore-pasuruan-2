@@ -1,8 +1,9 @@
-import 'package:equatable/equatable.dart';
+abstract class TourEvent {}
 
-abstract class TourEvent extends Equatable {}
+class GetAllTours extends TourEvent {}
 
-class FetchToursEvent extends TourEvent {
-  @override
-  List<Object> get props => [];
+class GetDetailTour extends TourEvent {
+  final String id;
+
+  GetDetailTour(this.id);
 }
