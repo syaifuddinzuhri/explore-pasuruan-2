@@ -22,6 +22,16 @@ class TourBloc extends Bloc<TourEvent, TourState> {
         yield TourErrorState(message: e.toString());
       }
     }
+    if (event is SearchTours) {
+      yield TourLoadingState();
+      try {
+        List<TourModel> tours =
+            await tourRepository.searchTours(event.keyword.toString());
+        yield TourLoadedState(tours: tours);
+      } catch (e) {
+        yield TourErrorState(message: e.toString());
+      }
+    }
     if (event is GetDetailTour) {
       yield TourLoadingState();
       try {

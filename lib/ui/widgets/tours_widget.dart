@@ -33,10 +33,6 @@ class _ToursWidgetState extends State<ToursWidget> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
-              'Semua Wisata di Pasuruan',
-              style: mTitleStyle,
-            ),
             Flexible(
               child: ListView.builder(
                 itemCount: widget.tours.length,

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:miniproject/constants/color_constant.dart';
 import 'package:miniproject/ui/pages/home_page.dart';
 import 'package:miniproject/ui/pages/profile_page.dart';
-import 'package:miniproject/ui/pages/search_tour_page.dart';
 import 'package:miniproject/ui/pages/tour_page.dart';
 
 class MainPage extends StatefulWidget {
@@ -15,7 +14,6 @@ class _MainPageState extends State<MainPage> {
   List<Widget> _pages = <Widget>[
     HomePage(),
     TourPage(),
-    SearchTourPage(),
     ProfilePage(),
   ];
 
@@ -32,10 +30,6 @@ class _MainPageState extends State<MainPage> {
         BottomNavigationBarItem(
           icon: Icon(Icons.attractions_outlined),
           activeIcon: Icon(Icons.attractions, color: mBlueColor),
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.search_outlined),
-          activeIcon: Icon(Icons.search, color: mBlueColor),
         ),
         BottomNavigationBarItem(
           icon: CircleAvatar(

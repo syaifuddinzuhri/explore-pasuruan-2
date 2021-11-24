@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:miniproject/bloc/tours/tour_bloc.dart';
+import 'package:miniproject/bloc/tours/tour_event.dart';
 import 'package:miniproject/constants/color_constant.dart';
 import 'package:miniproject/constants/style_constant.dart';
 import 'package:miniproject/models/tour_model.dart';
@@ -14,12 +17,14 @@ class SearchTourPage extends StatefulWidget {
 }
 
 class _SearchTourPageState extends State<SearchTourPage> {
+  late TourBloc tourBloc;
   List<TourModel> filteredTour = [];
   final FocusNode _textFocusNode = FocusNode();
   TextEditingController _textEditingController = TextEditingController();
 
   @override
   void dispose() {
+    // tourBloc = BlocProvider.of<TourBloc>(context);
     _textFocusNode.dispose();
     _textEditingController.dispose();
     super.dispose();
