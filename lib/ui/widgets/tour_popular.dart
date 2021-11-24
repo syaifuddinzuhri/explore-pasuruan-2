@@ -84,13 +84,13 @@ class _PopularTourState extends State<PopularTour> {
                     ),
                   ),
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) =>
-                            DetailTourPage(populars[index].id),
-                      ),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) =>
+                    //         DetailTourPage(populars[index].id),
+                    //   ),
+                    // );
                   },
                 );
               },

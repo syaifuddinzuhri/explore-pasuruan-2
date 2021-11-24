@@ -10,7 +10,7 @@ import 'package:miniproject/constants/color_constant.dart';
 import 'package:miniproject/ui/pages/tour_page.dart';
 
 class DetailTourPage extends StatefulWidget {
-  final String id;
+  final int id;
   // final String param;
 
   DetailTourPage(this.id);
@@ -75,10 +75,8 @@ class _DetailTourPageState extends State<DetailTourPage> {
                                     // opacity: 1.0,
                                     child: Text(state.tour.name.toString(),
                                         style: TextStyle(color: mBlueColor))),
-                                background: Image.asset(
-                                  state.tour.image.toString(),
-                                  fit: BoxFit.cover,
-                                ));
+                                background:
+                                    Image.network(state.tour.image.toString()));
                           })),
                     ];
                   },

@@ -123,7 +123,7 @@ class _ToursWidgetState extends State<ToursWidget> {
                         context,
                         MaterialPageRoute(
                           builder: (context) =>
-                              DetailTourPage(widget.tours[index].id.toString()),
+                              DetailTourPage(widget.tours[index].id),
                         ),
                       );
                     },

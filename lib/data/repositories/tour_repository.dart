@@ -25,10 +25,10 @@ class TourRepositoryImpl implements TourRepository {
 
   // Get Detail Tour
   Future<TourModel> getDetailTour(id) async {
-    var response = await http
-        .get(Uri.parse(AppStrings.baseUrl + '/tour/' + id.toString()));
+    var response =
+        await http.get(Uri.parse(AppStrings.baseUrl + '/tour/' + id));
     if (response.statusCode == 200) {
-      TourModel tour = TourModel.fromJson(json.decode(response.body));
+      TourModel tour = TourModel.fromJson(json.decode(response.body)['data']);
       return tour;
     } else {
       throw Exception();

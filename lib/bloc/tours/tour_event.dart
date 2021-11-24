@@ -3,7 +3,7 @@ abstract class TourEvent {}
 class GetAllTours extends TourEvent {}
 
 class GetDetailTour extends TourEvent {
-  final String id;
+  final int id;
 
   GetDetailTour(this.id);
 }
