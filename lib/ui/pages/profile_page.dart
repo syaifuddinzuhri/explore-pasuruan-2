@@ -53,8 +53,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
                           radius: 60,
-                          backgroundImage:
-                              AssetImage(state.profile.photo.toString()),
+                          backgroundImage: NetworkImage(state.profile.photo),
                         ),
                       ),
                     ),
