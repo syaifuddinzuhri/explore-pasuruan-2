@@ -39,6 +39,11 @@ Seiring berjalannya waktu dengan dikembangkan aplikasi ini tentunya akan ada pen
 [<img src="docs/profile.png" width="250"/>](docs/profile.png)
 
 
-## Link Video Presentasi dan Demo 
+## Link Video Presentasi dan Demo Miniproject 1
 
 ### https://youtu.be/VrrGRClxXkw
+
+
+## Link Video Presentasi dan Demo Miniproject 2
+
+### https://youtu.be/X59X40b5LvU
